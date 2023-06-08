@@ -19,7 +19,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1000dp"
+                android:layout_height="932dp"
                 android:layout_marginTop="200dp"
                 android:padding="16dp"
                 android:background="@drawable/cornerbox_white">
@@ -72,7 +72,6 @@
                         android:id="@+id/hobby"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/text_hobby"/>
@@ -158,7 +157,6 @@
                         android:id="@+id/makes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/text_makes"/>
@@ -170,11 +168,12 @@
                         android:layout_marginTop="16dp"
                         android:background="@drawable/rounded_grey_box"
                         android:layout_below="@id/makes">
+
                         <ImageView
                             android:id="@+id/img_rendang"
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:src="@drawable/icon_tv"/>
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/img_rendang"/>
                         <TextView
                             android:id="@+id/rendang"
                             android:layout_width="wrap_content"
@@ -182,7 +181,19 @@
                             android:layout_toRightOf="@id/img_rendang"
                             android:layout_marginLeft="16dp"
                             android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
                             android:text="@string/text_rendang"/>
+                        <TextView
+                            android:id="@+id/desc_rendang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rendang"
+                            android:layout_toRightOf="@id/img_rendang"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            android:text="@string/text_desc_rendang"/>
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/parent_bakso"
@@ -193,9 +204,9 @@
                         android:layout_below="@id/parent_rendang">
                         <ImageView
                             android:id="@+id/img_bakso"
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:src="@drawable/icon_tv"/>
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/img_bakso"/>
                         <TextView
                             android:id="@+id/bakso"
                             android:layout_width="wrap_content"
@@ -203,7 +214,19 @@
                             android:layout_toRightOf="@id/img_bakso"
                             android:layout_marginLeft="16dp"
                             android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
                             android:text="@string/text_bakso"/>
+                        <TextView
+                            android:id="@+id/desc_bakso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bakso"
+                            android:layout_toRightOf="@id/img_bakso"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            android:text="@string/text_desc_bakso"/>
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/parent_nasgor"
@@ -214,9 +237,9 @@
                         android:layout_below="@id/parent_bakso">
                         <ImageView
                             android:id="@+id/img_nasgor"
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:src="@drawable/icon_tv"/>
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/img_nasgor"/>
                         <TextView
                             android:id="@+id/nasgor"
                             android:layout_width="wrap_content"
@@ -224,7 +247,144 @@
                             android:layout_toRightOf="@id/img_nasgor"
                             android:layout_marginLeft="16dp"
                             android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
                             android:text="@string/text_nasgor"/>
+                        <TextView
+                            android:id="@+id/desc_nasgor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nasgor"
+                            android:layout_toRightOf="@id/img_nasgor"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            android:text="@string/text_desc_nasgor"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/parent_mikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/parent_makes"
+                    android:layout_marginTop="16dp"
+                    android:padding="16dp"
+                    android:background="@drawable/white_box">
+
+                    <TextView
+                        android:id="@+id/mikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/text_mikes"/>
+
+                    <RelativeLayout
+                        android:id="@+id/parent_avocado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/rounded_grey_box"
+                        android:layout_below="@id/mikes">
+
+                        <ImageView
+                            android:id="@+id/img_avocado"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/img_avocado"/>
+                        <TextView
+                            android:id="@+id/avocado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/img_avocado"
+                            android:layout_marginLeft="16dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/text_avocado"/>
+                        <TextView
+                            android:id="@+id/desc_avocado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/avocado"
+                            android:layout_toRightOf="@id/img_avocado"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            android:text="@string/text_desc_avocado"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/parent_coconut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_grey_box"
+                        android:layout_below="@id/parent_avocado">
+                        <ImageView
+                            android:id="@+id/img_coconut"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/img_coconut"/>
+                        <TextView
+                            android:id="@+id/coconut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/img_coconut"
+                            android:layout_marginLeft="16dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/text_coconut"/>
+                        <TextView
+                            android:id="@+id/desc_coconut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/coconut"
+                            android:layout_toRightOf="@id/img_coconut"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            android:text="@string/text_desc_coconut"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/parent_dreams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/parent_mikes"
+                    android:layout_marginTop="16dp"
+                    android:padding="16dp"
+                    android:background="@drawable/white_box">
+
+                    <TextView
+                        android:id="@+id/dreams"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/text_dreams"/>
+
+                    <RelativeLayout
+                        android:id="@+id/parent_travel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/rounded_grey_box"
+                        android:layout_below="@id/dreams">
+                        <ImageView
+                            android:id="@+id/icon_plane"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/icon_plane"/>
+                        <TextView
+                            android:id="@+id/traveling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14sp"
+                            android:layout_toRightOf="@id/icon_plane"
+                            android:layout_marginLeft="16dp"
+                            android:textSize="14sp"
+                            android:text="@string/text_the_dreams"/>
                     </RelativeLayout>
                 </RelativeLayout>
             </RelativeLayout>

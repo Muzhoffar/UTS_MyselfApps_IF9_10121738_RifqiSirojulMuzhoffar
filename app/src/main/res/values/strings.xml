@@ -17,15 +17,19 @@
 
     <string name="text_makes">Favorite Foods</string>
     <string name="text_rendang">Rendang</string>
+    <string name="text_desc_rendang">One of Indonesian dishes which is famous for its deliciousness</string>
     <string name="text_bakso">Bakso</string>
+    <string name="text_desc_bakso">A type of meat ball that is commonly found in Indonesian cuisine</string>
     <string name="text_nasgor">Nasi Goreng</string>
+    <string name="text_desc_nasgor">Nasi goreng is basically fried rice with Indonesian special spices</string>
     <string name="text_mikes">Favorite Drinks</string>
     <string name="text_avocado">Avocado Juice</string>
+    <string name="text_desc_avocado">A rich and silky chilled beverage made of fresh avocado</string>
     <string name="text_coconut">Coconut Water</string>
-    <string name="text_tea">Milk Tea</string>
+    <string name="text_desc_coconut">Recognised to be extremely hydrating and a good source of replenishing electrolytes</string>
 
-    <string name="text_goals">My Goals</string>
-    <string name="text_the_goals">Traveling around the world</string>
+    <string name="text_dreams">Dreams</string>
+    <string name="text_the_dreams">Traveling around the world</string>
 
 
     //profile
