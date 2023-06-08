@@ -1,12 +1,15 @@
 package com.example.uts_if9_10121738_rifqisirojulmuzhoffar;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +58,44 @@ public class ProfileFragment extends Fragment {
         }
     }
 
+    ImageView email, instagram, address;
+    TextView call;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View root = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        email = root.findViewById(R.id.icon_email);
+        instagram = root.findViewById(R.id.icon_instagram);
+        address = root.findViewById(R.id.icon_address);
+
+        email.setOnClickListener(v -> {
+            Intent gm = new Intent();
+            gm.setAction(Intent.ACTION_VIEW);
+            gm.addCategory(Intent.CATEGORY_BROWSABLE);
+            gm.setData(Uri.parse("mailto:rmuzhoffar@gmail.com"));
+            startActivity(gm);
+        });
+
+        instagram.setOnClickListener(v -> {
+            Intent ig = new Intent();
+            ig.setAction(Intent.ACTION_VIEW);
+            ig.addCategory(Intent.CATEGORY_BROWSABLE);
+            ig.setData(Uri.parse("https://www.instagram.com/rfq.sm/"));
+            startActivity(ig);
+        });
+
+        address.setOnClickListener(v -> {
+            Intent map = new Intent();
+            map.setAction(Intent.ACTION_VIEW);
+            map.addCategory(Intent.CATEGORY_BROWSABLE);
+            map.setData(Uri.parse("https://goo.gl/maps/dUQ1NJ2p3GdCgLFc8"));
+            startActivity(map);
+        });
+
+        return root;
+
     }
 }

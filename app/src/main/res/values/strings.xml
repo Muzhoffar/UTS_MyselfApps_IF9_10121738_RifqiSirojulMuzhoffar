@@ -6,6 +6,26 @@
     <string name="text_myself">RIFQI</string>
     <string name="text_apps">APPS</string>
 
+    //home
+    <string name="text_my_interest">MY INTEREST</string>
+    <string name="text_hobby">Hobby</string>
+    <string name="text_watching_tv">Watching Film</string>
+    <string name="text_playing_games">Playing Games</string>
+    <string name="text_listening_to_music">Listening To Music</string>
+
+    <string name="text_makes">Favorite Foods</string>
+    <string name="text_rendang">Rendang</string>
+    <string name="text_bakso">Bakso</string>
+    <string name="text_nasgor">Nasi Goreng</string>
+    <string name="text_mikes">Favorite Drinks</string>
+    <string name="text_avocado">Avocado Juice</string>
+    <string name="text_coconut">Coconut Water</string>
+    <string name="text_tea">Milk Tea</string>
+
+    <string name="text_goals">My Goals</string>
+    <string name="text_the_goals">Traveling around the world</string>
+
+
     //profile
     <string name="text_user_name">Rifqi Sirojul Muzhoffar</string>
     <string name="text_description">An Informatics Engineering student at the Indonesian Computer University</string>
