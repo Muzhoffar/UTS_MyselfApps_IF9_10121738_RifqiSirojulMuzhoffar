@@ -19,7 +19,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="675dp"
+                android:layout_height="600dp"
                 android:layout_marginTop="200dp"
                 android:padding="16dp"
                 android:background="@drawable/cornerbox_white">
