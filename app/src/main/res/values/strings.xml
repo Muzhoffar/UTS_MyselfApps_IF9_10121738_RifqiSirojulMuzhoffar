@@ -5,6 +5,8 @@
 
     <string name="text_myself">RIFQI</string>
     <string name="text_apps">APPS</string>
+    <string name="text_app_name">RIFQI APPS</string>
+
 
     //home
     <string name="text_my_interest">MY INTEREST</string>
@@ -38,7 +40,7 @@
     <string name="text_the_instagram">@rfq.sm</string>
     <string name="text_address">Address</string>
     <string name="text_the_address">Bandung, West Java, Indonesia</string>
-    <string name="text_about_app">About This App</string>
+    <string name="text_about_app">About App</string>
     <string name="description_about">This application is made for the Midterm Examination of Mobile Computing Applications course</string>
     <string name="text_version">v1.0.0</string>
 

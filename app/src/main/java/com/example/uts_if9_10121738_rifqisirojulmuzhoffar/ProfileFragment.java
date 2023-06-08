@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.uts_if9_10121738_rifqisirojulmuzhoffar.AboutDialog;
+import com.example.uts_if9_10121738_rifqisirojulmuzhoffar.R;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ProfileFragment#newInstance} factory method to
@@ -59,7 +62,7 @@ public class ProfileFragment extends Fragment {
     }
 
     ImageView email, instagram, address;
-    TextView call;
+    TextView about;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -70,6 +73,7 @@ public class ProfileFragment extends Fragment {
         email = root.findViewById(R.id.icon_email);
         instagram = root.findViewById(R.id.icon_instagram);
         address = root.findViewById(R.id.icon_address);
+        about = root.findViewById(R.id.about_app);
 
         email.setOnClickListener(v -> {
             Intent gm = new Intent();
@@ -93,6 +97,11 @@ public class ProfileFragment extends Fragment {
             map.addCategory(Intent.CATEGORY_BROWSABLE);
             map.setData(Uri.parse("https://goo.gl/maps/dUQ1NJ2p3GdCgLFc8"));
             startActivity(map);
+        });
+
+        about.setOnClickListener(v -> {
+            AboutDialog aboutDialog = new AboutDialog();
+            aboutDialog.show(getFragmentManager(),"AboutDialogFragment");
         });
 
         return root;
