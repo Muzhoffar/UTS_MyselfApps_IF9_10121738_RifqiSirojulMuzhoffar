@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.uts_if9_10121738_rifqisirojulmuzhoffar.AboutDialog;
-import com.example.uts_if9_10121738_rifqisirojulmuzhoffar.R;
-
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ProfileFragment#newInstance} factory method to
