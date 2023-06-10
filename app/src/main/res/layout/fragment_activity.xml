@@ -21,11 +21,20 @@
             tools:context="com.example.uts_if9_10121738_rifqisirojulmuzhoffar.Fragment.DailyFragment">
 
             <TextView
+                android:id="@+id/text_dailyactivities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:layout_marginTop="53dp"
-                android:text="Daily Activities &amp; My Friends"
+                android:layout_marginTop="44dp"
+                android:text="Daily Activity"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white2"
+                android:textSize="28dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="And Friends"
                 android:textColor="@color/white2"
                 android:textSize="28dp"
                 android:textStyle="bold"/>
@@ -34,7 +43,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="700dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="31dp"
                 android:background="@drawable/cornerbox_white"
                 android:padding="16dp">
 
