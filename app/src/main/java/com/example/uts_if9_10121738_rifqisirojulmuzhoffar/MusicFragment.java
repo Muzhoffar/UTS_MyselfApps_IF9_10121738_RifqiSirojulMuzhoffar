@@ -1,12 +1,19 @@
 package com.example.uts_if9_10121738_rifqisirojulmuzhoffar;
 
+import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +62,51 @@ public class MusicFragment extends Fragment {
         }
     }
 
+    RecyclerView recyclerViewMusic;
+    ArrayList<MusicModel> musicModel;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_music, container, false);
+        View root = inflater.inflate(R.layout.fragment_music, container, false);
+
+        recyclerViewMusic = root.findViewById(R.id.recview_music);
+        recyclerViewMusic.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        musicModel = new ArrayList<>();
+
+        MusicModel music1 = new MusicModel(R.drawable.cover_fine, "Fine", "Taeyeon");
+        musicModel.add(music1);
+        MusicModel music2 = new MusicModel(R.drawable.cover_goodday, "Good Day", "IU");
+        musicModel.add(music2);
+        MusicModel music3 = new MusicModel(R.drawable.cover_psycho, "Psycho", "Red Velvet");
+        musicModel.add(music3);
+        MusicModel music4 = new MusicModel(R.drawable.cover_eldorado, "El Dorado", "EXO");
+        musicModel.add(music4);
+        MusicModel music5 = new MusicModel(R.drawable.cover_rose, "Rose", "D.O");
+        musicModel.add(music5);
+        MusicModel music6 = new MusicModel(R.drawable.cover_thatsokay, "That's Okay", "D.O");
+        musicModel.add(music6);
+        MusicModel music7 = new MusicModel(R.drawable.cover_gravity, "Gravity", "Taeyeon");
+        musicModel.add(music7);
+        MusicModel music8 = new MusicModel(R.drawable.cover_some, "Some", "BOL4");
+        musicModel.add(music8);
+        MusicModel music9 = new MusicModel(R.drawable.cover_eight, "Eight", "IU");
+        musicModel.add(music9);
+        MusicModel music10 = new MusicModel(R.drawable.cover_backintime, "Back In Time", "Lyn");
+        musicModel.add(music10);
+
+        recyclerViewMusic.setAdapter(new MusicAdapter(musicModel));
+
+        VideoView vvVideo = root.findViewById(R.id.vv_video);
+        String videoPath = "android.resource://" + getContext().getPackageName() + "/" + R.raw.video;
+        Uri uri = Uri.parse(videoPath);
+        vvVideo.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(getContext());
+        vvVideo.setMediaController(mediaController);
+        mediaController.setAnchorView(vvVideo);
+
+        return root;
     }
 }

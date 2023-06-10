@@ -5,28 +5,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/navy"
     tools:context=".MusicFragment">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:background="@color/blue"
-        android:padding="16dp">
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
 
-        <RelativeLayout
-            android:id="@+id/box1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:clipToOutline="true"
-            android:background="@drawable/white_box">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/navy"
+            tools:context="com.example.uts_if9_10121738_rifqisirojulmuzhoffar.MusicFragment">
 
-            <ImageView
-                android:id="@+id/banner"
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_music"/>
-        </RelativeLayout>
-    </RelativeLayout>
+                android:textAlignment="center"
+                android:layout_marginTop="53dp"
+                android:text="Music &amp; Video"
+                android:textColor="@color/white2"
+                android:textSize="28dp"
+                android:textStyle="bold"/>
+
+            <!-- TODO: Update blank fragment layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="940dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/cornerbox_white"
+                android:padding="16dp">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/widget_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/white_box">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="My Music"
+                            android:textSize="20sp"
+                            android:textColor="#212121"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/recview_music"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/widget_music">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:background="@drawable/white_box">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="My Video"
+                            android:textSize="20sp"
+                            android:textColor="#212121"
+                            android:textStyle="bold"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/white_box"
+                            android:clipToOutline="true">
+                            <VideoView
+                                android:id="@+id/vv_video"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

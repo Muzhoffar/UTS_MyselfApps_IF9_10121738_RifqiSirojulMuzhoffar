@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.text.util.Linkify;
 
 import androidx.fragment.app.Fragment;
 
@@ -58,7 +59,7 @@ public class ProfileFragment extends Fragment {
         }
     }
 
-    ImageView email, instagram, address;
+    ImageView call, email, instagram, address;
     TextView about;
 
     @Override
@@ -67,10 +68,22 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_profile, container, false);
 
+        call = root.findViewById(R.id.icon_call);
         email = root.findViewById(R.id.icon_email);
         instagram = root.findViewById(R.id.icon_instagram);
         address = root.findViewById(R.id.icon_address);
         about = root.findViewById(R.id.about_app);
+
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent wa = new Intent();
+                wa.setAction(Intent.ACTION_VIEW);
+                wa.addCategory(Intent.CATEGORY_BROWSABLE);
+                wa.setData(Uri.parse("https://api.whatsapp.com/send?phone=6285155239223"));
+                startActivity(wa);
+            }
+        });
 
         email.setOnClickListener(v -> {
             Intent gm = new Intent();
