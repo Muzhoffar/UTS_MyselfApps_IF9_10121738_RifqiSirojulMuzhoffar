@@ -19,6 +19,7 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="14dp"
+            android:textColor="#212121"
             android:text="@string/text_app_name"/>
         <TextView
             android:id="@+id/description_about"

@@ -1,5 +1,10 @@
 package com.example.uts_if9_10121738_rifqisirojulmuzhoffar;
 
+/*  Tanggal Pengerjaan  : 28 Mei 2023
+    Nama                : Rifqi Sirojul Muzhoffar
+    NIM                 : 10121738
+    Kelas               : IF-9 */
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.Fragment;

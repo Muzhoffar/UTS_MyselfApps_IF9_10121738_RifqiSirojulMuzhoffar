@@ -1,21 +1,14 @@
 package com.example.uts_if9_10121738_rifqisirojulmuzhoffar;
 
-/*  Tanggal Pengerjaan  : 8 Juli 2023
+/*  Tanggal Pengerjaan  : 5 Juli 2023
     Nama                : Rifqi Sirojul Muzhoffar
     NIM                 : 10121738
     Kelas               : IF-9 */
 
-public class MusicModel {
-
-    int image;
-    String title;
-    String singer;
-
-    public MusicModel(int image, String title, String singer) {
-        this.image = image;
-        this.title = title;
-        this.singer = singer;
-    }
+public class WalkthroughModel {
+    private int image;
+    private String title;
+    private String subtitle;
 
     public int getImage() {
         return image;
@@ -33,11 +26,11 @@ public class MusicModel {
         this.title = title;
     }
 
-    public String getSinger() {
-        return singer;
+    public String getSubtitle() {
+        return subtitle;
     }
 
-    public void setSinger(String singer) {
-        this.singer = singer;
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
     }
 }
